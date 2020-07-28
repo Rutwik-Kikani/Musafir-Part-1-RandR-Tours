@@ -1,0 +1,88 @@
+<div class="container" style="margin-top: 5rem;">
+	<h1 style="color: darkorange">Welcome Admin!</h1>
+	<h3>What would you like to do...</h3>
+	<br>
+	<button class="btn btn-outline-warning" style="margin-right: 1rem;" (click)="adduser()">Add User</button>
+	<button class="btn btn-outline-warning" style="margin-right: 1rem;" (click)="showallusers()">Show all Users</button>
+	<button class="btn btn-outline-warning" style="margin-right: 1rem;" data-toggle="modal"
+		data-target="#findUserModal">Find User</button>
+	<button class="btn btn-outline-warning" style="margin-right: 1rem;" data-toggle="modal"
+		data-target="#deleteUserModal">Delete User</button>
+	<br><br>
+	<br><br>
+
+	<!-- model for finding the user -->
+	<div class="modal fade" id="findUserModal">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content bg-dark text-center mx-auto text-white">
+				<div class="modal-header">
+					<h3 class="modal-title" style="color:darkorange;padding-left: 9rem;">Find the user</h3>
+					<button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<br>
+					<form action="" [formGroup]="findUserForm">
+						<div class="form-group">
+							<input formControlName="email" type="email" class="form-control" id="email"
+								placeholder="Enter Email" name="email">
+						</div>
+						<br>
+						<div *ngIf="find">
+							<div *ngIf="userf.firstname">
+								<p>Firstname: {{userf.firstname}}</p>
+								<p>Lastname: {{userf.lastname}}</p>
+								<p>Email: {{userf.email}}</p>
+								<p>Mobile no: {{userf.phone}}</p>
+							</div>
+							<div *ngIf="userf.messg">
+								<h5>{{userf.messg}}</h5><br>
+							</div>
+							
+						</div>
+						<br>
+						<button id="find" (click)="findUser()" type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- model for deleitng user -->
+	<div class="modal fade" id="deleteUserModal">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content bg-dark text-center mx-auto text-white">
+				<div class="modal-header">
+					<h3 class="modal-title" style="color:darkorange;padding-left: 9rem;">Delete the user</h3>
+					<button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body">
+					<br>
+					<form action="" [formGroup]="deleteUserForm">
+						<div class="form-group">
+							<input formControlName="email" type="email" class="form-control" id="email"
+								placeholder="Enter Email" name="email">
+						</div>
+						<br>
+						<div *ngIf="del">
+							{{usermessg.messg}}
+						</div>
+						<br>
+						<button id="delete" (click)="deleteUser()" type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div *ngIf="show">
+		<div *ngFor="let user of alluser">
+			<p>Firstname: {{user.firstname}}</p>
+			<p>Lastname: {{user.lastname}}</p>
+			<p>Email: {{user.email}}</p>
+			<p>Mobile no: {{user.phone}}</p>
+			<!-- <p>Password: {{user.password}}</p> --><br>
+		</div>
+	</div>
+	<br><br>
+	<br><br>
+	<br><br>
+</div>

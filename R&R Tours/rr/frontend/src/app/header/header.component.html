@@ -1,0 +1,64 @@
+<!-- navbar start -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <!-- brand name -->
+  <a class="navbar-brand" routerLink="">R&R</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <!-- tours dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Tours</a>
+        <div class="dropdown-menu">
+          <div class="row">
+            <div class="col-sm-4">
+              <h5 class="dropdown-header"><b>World Tours</b></h5>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" routerLink="/state">Africa</a>
+              <a class="dropdown-item" routerLink="/america">America</a>
+              <a class="dropdown-item" routerLink="/australia">Australia-Newzealand</a>
+              <a class="dropdown-item" routerLink="/bhutan">Bhutan</a>
+              <a class="dropdown-item" routerLink="/dubai">Dubai</a>
+              <a class="dropdown-item" routerLink="/europe">Europe</a>
+            </div>
+            <div class="col-sm-4">
+              <h5 class="dropdown-header"><b>Indian Tours</b></h5>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" routerLink="/andaman">Andaman</a>
+              <a class="dropdown-item" routerLink="/goa">Goa</a>
+              <a class="dropdown-item" routerLink="/himachal">Himachal</a>
+              <a class="dropdown-item" routerLink="/kashmir">Kashmir</a>
+              <a class="dropdown-item" routerLink="/leh">Leh Ladakh</a>
+              <a class="dropdown-item" routerLink="/sikkim">Sikkim Darjeeling</a>
+            </div>
+            <div class="col-sm-4">
+              <br>
+              <br>
+              <a class="dropdown-item" routerLink="/andhra">Andhra Pradesh</a>
+              <a class="dropdown-item" routerLink="/gujarat">Gujarat</a>
+              <a class="dropdown-item" routerLink="/kailash">Kailash Manasarovar</a>
+              <a class="dropdown-item" routerLink="/kerala">Kerala</a>
+              <a class="dropdown-item" routerLink="/rajasthan">Rajasthan</a>
+              <a class="dropdown-item" routerLink="/up">Uttar Pradesh</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <!-- contact -->
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/contact-us">About Us</a>
+      </li>
+    </ul>
+    <!-- login -->
+    <span class="navbar-text">
+      <a *ngIf="!ck" routerLink="/login" class="text-white-50" style="text-decoration: none;">Login</a>
+      <a *ngIf="ck" routerLink="/myaccount" class="text-white-50" style="text-decoration: none;">{{email}}</a>
+    </span>
+    <span class="navbar-text">
+      <a *ngIf="ck" (click)="logout()" href="" class="text-white-50" style="text-decoration: none;">&nbsp;&nbsp;Logout</a>
+    </span>
+  </div>
+</nav>
+<!-- navbar end -->

@@ -1,0 +1,27 @@
+p{
+    font-size: 20px;
+}
+ h4{
+     margin-bottom: 1px;
+}
+/* input style */
+input{
+  width: 100%;
+  margin-bottom: 20px;
+  color: white;
+  border:none;
+  border-bottom: 1px solid darkorange;
+  padding-bottom: 5px;
+  background:transparent;
+  outline: none;
+  height:40px;
+}
+/* form-control style */
+.form-control:focus{
+  max-width: 30rem;
+  margin: 2rem;
+  border: none;
+  border-bottom: 1px solid darkorange;
+  background:transparent;
+  outline: none;
+}
