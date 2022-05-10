@@ -1,37 +1,43 @@
-## Welcome to GitHub Pages
+**### RandR Tours**
+**Description:**  
 
-You can use the [editor on GitHub](https://github.com/Rutwik-Kikani/RandRTours/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+The objective of the project is to develop a system that automates the process and activities of travel and tourism. The purpose of the system is to provide the more option for travelling places and also to give the basic facility. 
+User can come to the website and can find the tour packages of the places where he/she wants to go. User can select particular package and can see the details of the packages. Details of the package includes, places to be visited, no. of days, departure date, cost of the package etc. 
+User can request a call back for further booking of the package. 
+User can login to the system by providing email and password. If user doesn’t have account than he/she can create one by filling up the sign-up form.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+**_Technology and Tools Used_**
+1. Javascript, NodeJS and ExpressJS, 
+2. Typescript, Angular, Bootstrap 
+3. MongoDB
+ 
+**_Screen Shot of Web App_**
 
-### Markdown
+**_Home_**
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+![image](https://user-images.githubusercontent.com/59388716/167564201-db66131c-f3fe-4c84-923f-7781761ba42e.png)
 
-```markdown
-Syntax highlighted code block
+**_Indian tours_**
 
-# Header 1
-## Header 2
-### Header 3
+![image](https://user-images.githubusercontent.com/59388716/167564266-b74c72d9-fc51-4ccf-9bc3-f773a11bcd1e.png)
 
-- Bulleted
-- List
+**_International tours_**
 
-1. Numbered
-2. List
+![image](https://user-images.githubusercontent.com/59388716/167564349-0942554f-19c1-4415-a7eb-7231d8146deb.png)
 
-**Bold** and _Italic_ and `Code` text
+**_Profile Page_**
 
-[Link](url) and ![Image](src)
-```
+![image](https://user-images.githubusercontent.com/59388716/167564445-45723b4f-8264-4385-88f0-cea8a1ef76b4.png)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+**_Tour Details_**
 
-### Jekyll Themes
+![image](https://user-images.githubusercontent.com/59388716/167564649-6b5f4dc0-b510-4077-baa7-1e49d2f6560c.png)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Rutwik-Kikani/RandRTours/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+**_Request Callback_**
 
-### Support or Contact
+![image](https://user-images.githubusercontent.com/59388716/167564737-e3e70f3b-fb00-4df4-b62c-754121c732e6.png)
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+**_Admin_**
+
+![image](https://user-images.githubusercontent.com/59388716/167564795-b38e1e91-5c53-4c02-8e89-e0c832d1a4a6.png)
+
